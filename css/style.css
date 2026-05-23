@@ -21,10 +21,7 @@ body {
     }
   
     .splash {
-        background-image: url('../images/background.png');
-        background-size: cover; 
-        background-position: center;
-        background-repeat: no-repeat;
+        background-color: #E8E6E3;
         padding: 20px;
         display: flex;
         align-items: center;
@@ -134,38 +131,65 @@ body {
     }
     
     .skills { 
-        background-image: url('../images/background2.png');
+        background-color: #C9D3C7;
         background-size: cover; 
         background-position: center;
         background-repeat: no-repeat;
         text-align: center;
     }
 
-    .leadership { 
-        background-image: url('../images/background3.png');
-        background-size: cover; 
+    .leadership {
+        background-image: url('../images/background.png');
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 20px;
-        text-align: center;
+        padding: 40px 0 70px 0;
     }
     
-    .leadership dl {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        justify-content: center;
-        gap: 10px 20px; 
-        max-width: 800px;
+    .leadership-content {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
+    .leadership h2 {
+        text-align: center;
+        color: #313332;
+        margin-bottom: 35px;
+    }
+    
+    .experience-card {
+        background-color: #f2e5d3;
+        border-radius: 18px;
+        padding: 45px 55px;
+        max-width: 700px;
         margin: 0 auto;
     }
     
-    .leadership dt {
-        text-align: left;
+    .experience-card h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
     }
     
-    .leadership dd {
-        text-align: right;
-        margin: 0;
+    .experience-date {
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    
+    .experience-org {
+        font-style: italic;
+        margin-bottom: 22px;
+    }
+    
+    .experience-card ul {
+        max-width: 650px;
+        padding-left: 22px;
+        line-height: 1.7;
+    }
+    
+    .experience-card li {
+        margin-bottom: 12px;
     }
     
     h2 {
@@ -300,22 +324,35 @@ input, textarea {
 }
 
 .contact-info { 
-    background-color: #e8e2db;
+    background-color: #e8e6e3;
     text-align: center;
+    padding: 45px 20px 30px;
 }
 
 .contact-info h1 {
     margin: 0;
-    padding: 20px;
+    padding-bottom: 15px;
+    font-family: "Bona Nova SC", serif;
 }
 
 .contact-info p {
     margin: 0;
-    padding: 20px;
+}
+
+.one-col {
+    background-color: #d7ded5;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 600px; 
+    margin: 50px auto; 
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 form label {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
@@ -323,30 +360,27 @@ form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 100%;
-    max-width: 500px; 
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #e8e2db;
-    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #c9d3c7;
+    border-radius: 10px;
     box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
 }
 
 form input[type="submit"] {
-    background-color: #e8e2db;
-    color: #436b5c;
-    padding: 10px 20px;
-    border: 2px solid #436b5c;
-    border-radius: 4px;
+    background-color: #677E61;
+    color: #f2e5d3;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
-    transition: background-color 0.3s, border-color 0.3s;
 }
 
 form input[type="submit"]:hover {
-    background-color: #436b5c;
-    color: white;
-    border-color: #e8e2db;
+    background-color: #55694f;
 }
 
 footer {
